@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: relative;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 100;
+  min-width: 150px;
+}
+
+nav ul li:hover > ul,
+nav ul li ul:hover {
+  display: block;
+}
+
+nav ul li ul li {
+  margin-bottom: 0.5rem;
+}
+
+nav ul li ul li:last-child {
+  margin-bottom: 0;
+}
+
+nav ul li ul li a {
+  display: block;
+  background-color: #444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav ul li ul li a:hover {
+  background-color: #666;
+}
+
+main {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  background-image: url('https://source.unsplash.com/1600x600/?fashion');
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 2rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}

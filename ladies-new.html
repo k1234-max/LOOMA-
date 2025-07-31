@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Looma | Gentlemen Sale</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.02);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 1rem;
+    }
+
+    .product-info h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .product-info p {
+      color: #555;
+    }
+
+    .price {
+      color: #007B33;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Looma</h1>
+    <p> Ladies New Now </p>
+  </header>
+
+  <main>
+    <h2>< New Now Ladies ></h2>
+    <div class="products">
+      <div class="product">
+        <img src="NewNowBild1.jpeg" alt="Produkt 1">
+        <div class="product-info">
+          <h3>High Fashion Suit </h3>
+          <p>Modern und warm für kühle Tage</p>
+          <p class="price">259,99 €</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="NewNowBild2.jpeg" alt="Produkt 2">
+        <div class="product-info">
+          <h3>High Fashion Dress</h3>
+          <p>Fashion</p>
+          <p class="price">144,99 €</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="NewNowBild3.jpeg" alt="Produkt 3">
+        <div class="product-info">
+          <h3>Back to Black</h3>
+          <p>Special Business-Chic</p>
+          <p class="price">134,99 €</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Looma Fashion</p>
+  </footer>
+
+</body>
+</html>
